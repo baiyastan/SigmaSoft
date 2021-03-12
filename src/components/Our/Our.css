@@ -1,0 +1,205 @@
+.Our {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.our-Ellipse{
+    position: absolute;
+    display: grid;
+    grid-template: 10px/ auto auto auto auto;
+    grid-gap: 20px;
+    left: 20px;
+    top: 120px;
+}
+
+.Ellipses {
+    width: 6px;
+    height: 6px;
+    background: #A3F1CF;
+    border-radius: 50%;
+}
+.Our-container {
+    width: 88%;
+    height: auto;
+}
+.our-text-h6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+    width: 600px;
+    height: 48px;
+    text-align: center;
+}
+.our-logo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.our-btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.our-blue{
+    display: flex;
+    margin-top: 28px;
+
+}
+.our-blue1{
+    background: linear-gradient(180deg, #48FEBF 0%, #00B25C 100%);
+    border-radius: 34.1327px;
+    width: 54.61px;
+    height: 9.1px;
+    margin-left: 52px;
+}
+.our-blue2{
+    background: #A3F1CF;
+    width: 9.1px;
+    height: 9.1px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.our-btn{
+    margin-right: 10px;
+}
+.our-btn1{
+    border: 2px solid #33A7FF;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background: #ffffff;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.our-btn2{
+    box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    background: linear-gradient(180deg, #48FEBF 0%, #00B25C 100%);
+    
+
+}
+.our-end {
+    margin-top: 180px;
+    height: 277.98px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 3.4425px 3.4425px rgba(135, 146, 161, 0.16), 0px 5.16375px 35.2856px rgba(135, 146, 161, 0.11);
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.our-end-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 52px;
+    color: #1E266D;
+    width: 500px;
+}
+.our-end-btn{
+    background: linear-gradient(180deg, #48FEBF 0%, #00B25C 100%);
+    box-shadow: 0px 2.35714px 4.71429px rgba(0, 0, 0, 0.05);
+    border-radius: 117.857px;
+    border: none;
+    outline: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24.6499px;
+    line-height: 110%;
+    text-align: center;
+    color: #FFFFFF;
+    width: 350px;
+    height: 70px;
+}
+.our-Ellipse-end{
+    position: absolute;
+    display: grid;
+    grid-template: 10px/ auto auto auto auto;
+    grid-gap: 20px;
+    left: -10px;
+    bottom: 350px;
+}
+@media only screen and (max-width: 500px) {
+    .Our{
+        margin-top: 10px;
+    }
+    .our-Ellipse {
+      display: none;
+    }
+    .logo__1{
+        display: none;
+    }
+    .work-text{
+        font-size: 28px;
+        line-height: 52px;
+    }
+    .our-text-h6{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .our-blue{
+        display: none;
+    }
+    
+    .our-end-text{
+        font-size: 28px;
+        line-height: 34px;
+        width: 300px;
+        text-align: center;
+        margin-bottom: -40px;
+    }
+    .our-end-btn{
+        width: 137.6px;
+        height: 32px;
+        border-radius: 3.328px;
+        font-size: 12px;
+        margin: -20px;
+    }
+    .our-blue{
+        display: none;
+    }
+    .our-btns{
+        justify-content: center;
+    }
+    .our-Ellipse-end{
+        width: 45px;
+        height: 45px;
+        grid-template: 5px/ auto auto auto auto;
+        grid-gap: 10px;
+        left: 20px;
+        bottom: 450px;
+    }
+    .Ellipses{
+        width: 2.33px;
+        height: 2.33px;
+    }
+    .our-btn1{
+        width: 50.57px;
+        height: 50.57px;
+    }
+    .our-btn2{
+        width: 50.57px;
+        height: 50.57px;
+    }
+  }
+

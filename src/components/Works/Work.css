@@ -1,0 +1,318 @@
+.Work{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.work-Ellipse{
+    position: absolute;
+    display: grid;
+    grid-template: 10px/ auto auto auto auto;
+    grid-gap: 20px;
+    left: 20px;
+    top: 220px;
+}
+.Ellipse {
+    width: 6px;
+    height: 6px;
+    background: #A3F1CF;
+    border-radius: 50%;
+}
+.work-container {
+    width: 88%;
+    height: auto;
+}
+.text-container{
+    display: flex;
+    justify-content: center;
+}
+.work-text{
+    margin-top: 220px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: -10px;
+}
+.work-text-h6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+    width: 445px;
+    height: 48px;
+    text-align: center;
+   
+}
+.MaskGroup{
+    margin-left: 50px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+    
+
+}
+.MaskGroupBg{
+    position: relative;
+    width: 528.37px;
+    height: 368px;
+    background: #9DA3E9;
+}
+.MaskGroupBg1{
+    width: 528.37px;
+    height: 522px;
+    background: #FED892;
+}
+.MaskGroupBg2{
+    margin-top: -70px;
+    width: 528.37px;
+    height: 522px;
+    background: #F47B9E;
+}
+.MaskGroupBg3 {
+    width: 528.37px;
+    height: 368px;
+    margin-top: auto;
+    background: #74D5DE;
+}
+.MaskGrouph4{
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 6px 15px 30px rgba(229, 234, 239, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 125%;
+    color: #1E266D;
+    left: 50px;
+    top: 200px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+}
+.MaskGrouph5{
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #455880;
+    background: #FFFFFF;
+    box-shadow: 6px 15px 30px rgba(229, 234, 239, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    left: 50px;
+    top: 233px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+}
+.Group27{
+    margin-left: 50px;
+    margin-top: 80px;
+    position: absolute;
+}
+.GroupMac{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 350px;
+    
+}
+.MaskGrouph{
+    background: #FFFFFF;
+    box-shadow: 6px 15px 30px rgba(229, 234, 239, 0.5);
+    border-radius: 0px 0px 5px 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 125%;
+    color: #1E266D;
+    width: 130px;
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 40px;
+}
+.MaskGrouphm{
+    background: #FFFFFF;
+    box-shadow: 6px 15px 30px rgba(229, 234, 239, 0.5);
+    border-radius: 0px 0px 5px 5px; 
+    width: 170px;
+    margin-left: 40px;
+    text-align: center;
+    height: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #455880;
+    margin-top: -25px;
+}
+.ty{
+    width: 230px;
+}
+.mac{
+    margin-top: 50px;
+}
+.mac1{
+    margin-top: 240px;
+    position: absolute;
+}
+.mac2{
+    margin-top: 270px;
+    position: absolute;
+}
+.end{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    display: grid;
+    grid-template: 10px/ auto auto auto auto;
+    grid-gap: 20px;
+}
+.btn-work{
+    background: linear-gradient(180deg, #48FEBF 0%, #00B25C 100%);
+    box-shadow: 0px 4px 16px rgba(55, 81, 255, 0.29);
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    height: 60px;
+    width: 300px;
+}
+.work-btn-end{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (min-width: 2000px) {
+    .MaskGroup {
+      display: grid;
+      justify-content: space-around;
+      
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .work-container{
+        width: 100%;
+    }
+    .MaskGroup{
+        margin-left: 10px;
+        display: grid;
+        grid-row-gap: 26px;        
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-self: center;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+    .work-text{
+        margin-top: 100px;
+        font-size: 28px;
+        line-height: 52px;
+    }
+    .work-text-h6{
+        font-size: 14px;
+        line-height: 150%;
+        width: 335px;
+    }
+    .work-Ellipse{
+        width: 45px;
+        height: 45px;
+        grid-template: 5px/ auto auto auto auto;
+        grid-gap: 10px;
+        top: 20px;
+        margin-left: 270px;
+    }
+    .Ellipse {
+        width: 2px;
+        height: 2px;
+        background: #A3F1CF;
+        border-radius: 50%;
+    }
+    .MaskGroupBg{
+        justify-self: center;
+        width: 300px;
+        height: 236.11px;
+    }
+    .iphone{
+        width: 300px;
+        height: 238px;
+    }
+    .MaskGrouph4{
+        margin-top: -40px;
+        margin-left: -30px;
+    }
+    .MaskGrouph5{
+        margin-top: -40px;
+        margin-left: -30px; 
+    }
+    .MaskGroupBg1{
+        width: 300px;
+        height: 334.91px;
+        justify-self: center;
+    }
+    .Group27{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 289.2px;
+        height: 165.08px;
+    }
+    .GroupMac{
+        display: none;
+    }
+    .MaskGroupBg2{
+        justify-self: center;
+        margin-top: 0px;
+        width: 300.73px;
+        height: 334.65px;
+    }
+    .MaskGroupBg3{
+        width: 300px;
+        height: 236.11px;
+        justify-self: center;
+    }
+    .MaskGrouph{
+        margin-top: 220px;
+        z-index: 999;
+    }
+    .btn-work{
+        width: 137.6px;
+        height: 32px;
+        font-size: 12px;
+        line-height: 100%;
+        border-radius: 3.328px;
+    }
+    .end{
+        width: 45px;
+        height: 45px;
+        grid-template: 5px/ auto auto auto auto;
+        grid-gap: 10px;
+        left: 10px; 
+        margin-bottom: -15px;
+    }
+    .mac1{
+        margin-top: 150px;
+    }
+    .mac2{
+        margin-top: 180px;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .work-Ellipse{
+        margin-left: 240px;
+    }
+  }
