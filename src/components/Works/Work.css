@@ -193,6 +193,7 @@
     border: none;
     height: 60px;
     width: 300px;
+    cursor: pointer;
 }
 .work-btn-end{
     margin-top: 70px;

@@ -5,6 +5,7 @@ import Vector from '../../photo/Vector29.png';
 import './Navbar.css';
 
 export class Navbar extends Component {
+    
     render() {
         return (
             <div className="Navbar">

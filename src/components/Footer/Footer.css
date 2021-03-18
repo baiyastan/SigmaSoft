@@ -8,6 +8,7 @@
     height: auto;
     color: aliceblue;
 }
+
 .footer-block{
     display: flex;
     justify-content: space-between;
@@ -32,6 +33,7 @@
     font-size: 16px;
     line-height: 36px;
     color: #E9F7FE;
+    cursor: pointer;
 }
 .div{
     font-family: Open Sans;
@@ -40,6 +42,7 @@
     font-size: 16px;
     line-height: 28px;
     color:  #00B25C;
+    cursor: pointer;
 }
 .footer-line{
     border-top: 3px solid #313D55;
@@ -63,11 +66,23 @@
     line-height: 28px;
     color: #8C97AC;
 }
+
 .footer-icon{
     width: 120px;
     display: flex;
     justify-content: space-between;
 }
+.Footer-icons{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+.Footer-icons :hover {
+    color:  #48FEBF;
+    width: 35px;
+    height: 35px;
+}
+
 @media only screen and (max-width: 500px) {
     .footer-block{
         display: block;

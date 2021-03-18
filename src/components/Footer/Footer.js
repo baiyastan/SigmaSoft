@@ -7,6 +7,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 export class Footer extends Component { 
     
     render() {
+          
         return (
             <div className="Footer">
                 <div className="container">
@@ -41,9 +42,9 @@ export class Footer extends Component {
                         
                         <div className="footer-end-text">© SigmaSoft 2021, Все права защищены.</div>
                         <div className="footer-icon">
-                            <TwitterIcon />
-                            <FacebookIcon/>
-                            <InstagramIcon/>
+                            <a className="Footer-icons" href="/"><TwitterIcon/></a>
+                            <a className="Footer-icons" href="https://www.facebook.com/SigmaSoftt"><FacebookIcon /></a>
+                            <a className="Footer-icons" href="https://www.instagram.com/sigma.io/"><InstagramIcon /></a>
                             
                         </div>
                     </div>

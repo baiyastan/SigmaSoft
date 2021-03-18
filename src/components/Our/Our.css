@@ -129,6 +129,7 @@
     color: #FFFFFF;
     width: 350px;
     height: 70px;
+    cursor: pointer;
 }
 .our-Ellipse-end{
     position: absolute;
