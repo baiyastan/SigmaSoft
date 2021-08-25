@@ -12,6 +12,7 @@
 }
 .Header-text{
     margin-top: 150px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center; 
     font-family: Raleway;
@@ -46,25 +47,32 @@
     border-radius: 16px;
 }
 .card {
-    width: 296px;
-    height: 224px;
+    width: 287px;
+    height: 247px;
     background: #FFFFFF;
     border: 1px solid #ECF2FE;
     box-sizing: border-box;
+    box-shadow: inset 0px 0px 4px 2px rgba(126, 126, 126, 0.15);
+    border-radius: 4px
 }
 .card-div{
     display: flex;
+    align-items: center;
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 34px;
+    margin-bottom: 49px;
 }
 .card-div-color{
-    width: 48px;
-    height: 48px;
     background: #169BFF;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.card-shadow {
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.25);
+    width: 46.38px;
+    height: 40px;
 }
 .card_text{
     font-family: Raleway;
@@ -74,8 +82,8 @@
     line-height: 32px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #333333;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 16px;
 }
 .card-div-text{
     font-family: Roboto;
@@ -85,9 +93,8 @@
     line-height: 150%;
     color: #666666;
     margin-left: 30px;
-    width: 256px;
-    height: 72px;
     margin-top: 0;
+    margin-right: 12px;
 }
 .card-div-end{
     width: 56px;
@@ -101,8 +108,6 @@
 
 }
 .card-div-color1{
-    width: 48px;
-    height: 48px;
     background: #43CC74;
     border-radius: 8px;
     display: flex;
@@ -110,8 +115,6 @@
     align-items: center;
 }
 .card-div-color2{
-    width: 48px;
-    height: 48px;
     background: #F7473E;
     border-radius: 8px;
     display: flex;
@@ -119,8 +122,6 @@
     align-items: center;
 }
 .card-div-color3{
-    width: 48px;
-    height: 48px;
     background: #FCA100;
     border-radius: 8px;
     display: flex;

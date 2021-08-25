@@ -4,6 +4,10 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
 .Navbar-img{
     position: absolute;
     width: 100%;
@@ -22,18 +26,18 @@
     height: 896px;
 }
 .nav-Navbar{
-    margin-top: 25px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 120px;
-    align-items: center;
+    align-items: flex-start;
 }
 .nav-logo{
     display: flex;
 }
 .logo{
-    margin-top: 28px;
+    margin-top: 4px;
     width: 23.21px;
     height: 42px;
 }
@@ -48,7 +52,6 @@
     line-height: 30px;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
-    margin-bottom: -30px;
 }
 .logo-text-h5{
     font-family: Raleway;
@@ -69,6 +72,27 @@
     margin-right: 30px;
     cursor: pointer;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.search__input {
+    margin-top: 17px;
+    background: #FFFFFF;
+    width: 278px;
+    height: 38px;
+    outline: none;
+    border: none;
+    padding: 0 18px;
+    box-shadow: inset 0px 0px 4px 2px rgba(126, 126, 126, 0.15);
+    border-radius: 4px 0px 4px 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 96px;
+}
+.search__input::placeholder {
+    color: #CBCBCB;
 }
 .nav-button {
     text-align: center;
@@ -89,6 +113,7 @@
 }
 .span-text{
     width: 98%;
+    margin-top: 128px;
 }
 .nav-span-text{
     width: 734px;
@@ -101,7 +126,8 @@
     color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
-    
+    margin: 0;
+    padding: 0;
 }
 .nav-span-text-h5{
     width: 734px;
@@ -113,18 +139,19 @@
     color: #ECF2FE;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 38px;
 }
 .nav-btn-div{
-    margin-top: 100px;
+    margin-top: 38px;
     display: flex;
     width: 300px;
     justify-content: space-between;
 }
 .button-yellow{
-    width: 166px;
-    height: 52.53px;
-    background: linear-gradient(180deg, #48FEBF 0%, #00B25C 100%);
-    border-radius: 8px;
+    width: 188px;
+    height: 38px;
+    background: linear-gradient(180deg, #5EFFBE 0%, #009B5D 100%);
+    border-radius: 4px; 
     cursor: pointer;
     font-family: Roboto;
     font-style: normal;
@@ -150,11 +177,9 @@
     
 }
 .Social-media-link{
-    width: 430px;
-    height: 23.79px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 115px;
+    margin-bottom: 105px;
 }
 .Social-link{
     width: 70px;
@@ -169,6 +194,15 @@
 }
 .a{
     text-decoration: none;
+    width: 34.98px;
+    height: 34.98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #DADADA;
+    color: #102557;
+    margin-right: 27px;
 }
 @media only screen and (max-width: 1000px) {
     .nav-span-text{

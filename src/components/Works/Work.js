@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import MaskGroup from '../../photo/Mask-Group.png';
-import Group27 from '../../photo/Group27.png';
-import Group26 from '../../photo/Group26.png';
+import kundoluk from '../../photo/kundoluk.svg';
+import umnayaShkola from '../../photo/umnaya-shkola.svg';
+import fdm from '../../photo/fdm.svg';
 import Group28 from '../../photo/Group28.png';
-import GroupMac from '../../photo/GroupMac.png';
+import erkaBereke from '../../photo/erka-bereke.svg';
 import './Work.css';
 
 export class Work extends Component {
@@ -12,7 +12,7 @@ export class Work extends Component {
             <div className="Work">
                 <div className="work-Ellipse">
                     <div className="Ellipse"></div>
-                    <div className="Ellipse"></div> 
+                    <div className="Ellipse"></div>
                     <div className="Ellipse"></div>
                     <div className="Ellipse"></div>
                     <div className="Ellipse"></div>
@@ -44,28 +44,31 @@ export class Work extends Component {
                         </h6>
                     </div>
                     <div className="MaskGroup">
-                        <div className="MaskGroupBg">
-                            <img className="iphone" src={MaskGroup} alt="MaskGroup" />
-                            <h4 className="MaskGrouph4">Project 01</h4>
-                            <h5 className="MaskGrouph5">Kundoluk</h5>
+                        <div className="MaskGroupBg bottom">
+                            <div class="title">
+                                <h3>Kundoluk</h3>
+                            </div>
+                            <img className="iphone" src={kundoluk} alt="MaskGroup" />
                         </div>
-                        <div className="MaskGroupBg1">
-                            <img className="Group27" src={Group27} alt="Group27"/>
-                            <img className="GroupMac" src={GroupMac} alt="GroupMac"/>
-                            <h4 className="MaskGrouph">Project 02</h4>
-                            <h5 className="MaskGrouphm">Umnaya Shkola</h5>
+                        <div className="MaskGroupBg left yellow">
+                            <img className="" src={umnayaShkola} alt="Group27" />
+                            <div class="title">
+                                <h3 class="right">Umnaya<br /> Shkola</h3>
+                            </div>
                         </div>
-                        <div className="MaskGroupBg2">
-                            <img className="Group27" src={Group26} alt="Group26"/>
-                            <h4 className="MaskGrouph">Project 03</h4>
-                            <h5 className="MaskGrouphm ty">Air Manas Flight Systems</h5>
+                        <div className="MaskGroupBg red left">
+                            <img className="" src={fdm} alt="Group26" />
+                            <div class="title">
+                                <h3 class="right small">Air Manas<br /> Flight Systems</h3>
+                            </div>
                         </div>
-                        <div className="MaskGroupBg3">
-                            <img className="Group27 mac" src={Group28} alt="Group28"/>
-                            <h4 className="MaskGrouph mac1">Project 04</h4>
-                            <h5 className="MaskGrouphm mac2">Landing Page</h5>
+                        <div className="MaskGroupBg green">
+                            <img className="" src={erkaBereke} alt="Group28" />
+                            <div class="title">
+                                <h3 className="">Erka<br/> bereke</h3>
+                            </div>
                         </div>
-                        
+
                     </div>
                     <div className="work-btn-end">
                         <button className="btn-work">Show all our works</button>

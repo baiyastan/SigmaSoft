@@ -42,10 +42,14 @@ export class Footer extends Component {
                         
                         <div className="footer-end-text">© SigmaSoft 2021, Все права защищены.</div>
                         <div className="footer-icon">
-                            <a className="Footer-icons" href="/"><TwitterIcon/></a>
-                            <a className="Footer-icons" href="https://www.facebook.com/SigmaSoftt"><FacebookIcon /></a>
-                            <a className="Footer-icons" href="https://www.instagram.com/sigma.io/"><InstagramIcon /></a>
-                            
+                        <div className="footer-icon__content">
+                            <a className="a" target="blank" href="https://www.facebook.com/SigmaSoftt">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a className="a" target="blank" href="https://www.instagram.com/sigma.io/"><i class="fab fa-instagram"></i></a>
+                            <a className="a" target="blank" href="/"><i class="fab fa-dribbble"></i></a>
+                            <a className="a" target="blank" href="/"><i class="fab fa-behance"></i></a>
+                        </div>
                         </div>
                     </div>
                 </div>

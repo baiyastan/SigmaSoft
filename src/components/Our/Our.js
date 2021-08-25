@@ -53,7 +53,7 @@ export class Our extends Component {
                         <img className="logo__1" src={logo4} alt="logo4" />
                         <img className="logo__1" src={logo5} alt="logo5" />
                     </div>
-                    <div className="our-btns">
+                    {/* <div className="our-btns">
                         <div className="our-blue">
                             <div className="our-blue1"></div>
                             <div className="our-blue2"></div>
@@ -69,10 +69,10 @@ export class Our extends Component {
                                 <img src={IconColor1} alt="IconColor1" />
                             </button>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="our-end">
-                        <div className="our-end-text">Ready to launch your app and website?</div>
-                        <button className="our-end-btn">Get in touch now</button>
+                        <div className="our-end-text">Ready to launch<br/> your app and website?</div>
+                        <button className="our-end-btn">Start project</button>
                     </div>
                 </div>
                 <div className="our-Ellipse-end">
