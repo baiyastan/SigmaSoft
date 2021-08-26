@@ -1,6 +1,7 @@
 .App {
   position: relative;
-  background: #FFFFFF;
+  background: #ffffff;
 }
-
-
+body {
+  font-family: "Raleway", sans-serif;
+}
