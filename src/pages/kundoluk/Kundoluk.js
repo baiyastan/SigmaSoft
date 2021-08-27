@@ -8,6 +8,12 @@ import grades from '../../photo/kundoluk/grades.png'
 import Footer from '../../components/Footer';
 import { AeroHeader, AeroTitle, AeroBody, Container, Spacer } from '../../components/common/CommonCss'
 import styled from 'styled-components'
+import { useEffect } from 'react'
+import gsap from "gsap";
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const SubTitle = styled.p `
     font-size: 24px;
     line-height: 150%;
@@ -15,6 +21,36 @@ const SubTitle = styled.p `
     margin-bottom: 98px;
 `
 const Kundoluk = () => {
+    useEffect (() => {
+        const classes = [
+            { name: '.kun-title', x: 0, y: -30, delay: 0.3 },
+            { name: '.kun-sub-title', x: 0, y: -30, delay: 0.6 },
+            { name: '.item1-left', x: -100, y: 0, delay: 0.8 },
+            { name: '.item1-right', x: 100, y: 0, delay: 0.8 },
+            { name: '.item2-left', x: -100, y: 0, delay: 0.8 },
+            { name: '.item2-right', x: 100, y: 0, delay: 0.8 },
+            { name: '.item3-left', x: -100, y: 0, delay: 0.8 },
+            { name: '.item3-right', x: 100, y: 0, delay: 0.8 },
+            { name: '.item4-left', x: -100, y: 0, delay: 0.8 },
+            { name: '.item4-right', x: 100, y: 0, delay: 0.8 },
+        ]
+        classes.forEach((i, index) => {
+            gsap.from(i.name, {
+                duration: 2,
+                opacity: 0, 
+                delay: i.delay, 
+                x: i.x,
+                y: i.y,
+                stagger: 0.2,
+                ease: "power2", 
+                force3D: true,
+                scrollTrigger: {
+                    trigger: i.name,
+                    toggleActions: 'restart none none none'
+                },
+              });
+        })
+    })
     return <>
         <Header></Header>
         <Spacer></Spacer>
@@ -22,17 +58,17 @@ const Kundoluk = () => {
             <AeroHeader>
                 <img src={main} alt="kundoluk"></img>
             </AeroHeader>
-            <AeroTitle margin="20px 0 27px;">
+            <AeroTitle className="kun-title" margin="20px 0 27px;">
                 Kundoluk
             </AeroTitle>
             <Container>
-                <SubTitle>
+                <SubTitle className="kun-sub-title">
                     Мы помогаем школам идти в ногу со временем, создавая лучшие цифровые решения.
                 </SubTitle>
             </Container>
             <AeroBody>
                 <div className="item">
-                    <div>
+                    <div className="item1-left">
                         <p>Возможности для учителей</p>
                         <p>
                         Выставление оценок в электронном журнале
@@ -45,11 +81,11 @@ const Kundoluk = () => {
                         Просмотр статистики по ученику или по классу
                         </p>
                     </div>
-                    <img src={analytics} alt="" />
+                    <img className="item1-right" src={analytics} alt="" />
                 </div>
                 <div className="item">
-                    <img src={possibility} alt="" />
-                    <div>
+                    <img className="item2-left" src={possibility} alt="" />
+                    <div className="item2-right">
                         <p>Возможности для родителей</p>
                         <p>
                             Всё об успеваемости и оценках ребенка
@@ -64,7 +100,7 @@ const Kundoluk = () => {
                     </div>
                 </div>
                 <div className="item">
-                    <div>
+                    <div className="item3-left">
                         <p>Возможности для администрации школы</p>
 
                         <p>
@@ -76,11 +112,11 @@ const Kundoluk = () => {
                         Различные виды статистики по школе, классу или ученику
                         </p>
                     </div>
-                    <img src={admin} alt="" />
+                    <img className="item3-right" src={admin} alt="" />
                 </div>
                 <div className="item">
-                    <img src={course} alt="" />
-                    <img src={grades} alt="" />
+                    <img className="item4-left" src={course} alt="" />
+                    <img className="item4-right" src={grades} alt="" />
                 </div>
             </AeroBody>
         </main>

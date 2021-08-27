@@ -4,6 +4,17 @@
   justify-content: center;
   margin-top: 50px;
 }
+.our-text {
+  margin-top: 220px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 30px;
+}
 .our-Ellipse {
   position: absolute;
   display: grid;

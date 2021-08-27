@@ -1,7 +1,9 @@
 .Work {
   position: relative;
   display: flex;
+  max-width: 1440px;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .work-Ellipse {

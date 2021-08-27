@@ -1,5 +1,10 @@
 import MainFooter from './Footer/Footer'
 import styled from 'styled-components'
+import gsap from "gsap";
+import { useEffect } from 'react';
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const StartProject = styled.section`
     font-family: 'Roboto', sans-serif;
@@ -39,6 +44,28 @@ const StartProject = styled.section`
     }
 `
 const Footer = () => {
+    useEffect (() => {
+        const classes = [
+            { name: '.card', x: 0, y: 0, delay: 0.5 },
+        ]
+        classes.forEach((i, index) => {
+            gsap.from(i.name, {
+                duration: 2,
+                opacity: 0, 
+                delay: i.delay, 
+                x: i.x,
+                y: i.y,
+                stagger: 0.2,
+                ease: "power2", 
+                force3D: true,
+                scrollTrigger: {
+                    trigger: i.name,
+                    start: 'top bottom-=100px',
+                    toggleActions: 'restart none none none'
+                },
+              });
+        })
+    })
     return (
         <div>
             <StartProject>
